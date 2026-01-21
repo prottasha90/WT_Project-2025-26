@@ -11,7 +11,7 @@ DROP TABLE IF EXISTS missions;
 DROP TABLE IF EXISTS users;
 SET FOREIGN_KEY_CHECKS = 1;
 
--- 1. Users Table (Stores both Directors and Astronauts)
+-- 1. Users Table (Stores both Directors and Astronauts)  
 -- User Story: "Director can securely log in... Astronaut can log in... Both users can manage profiles"
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
