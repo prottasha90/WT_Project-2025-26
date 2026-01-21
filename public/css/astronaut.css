@@ -1,0 +1,165 @@
+/* ASTRONAUT THEME - "Field Interface" */
+/* Accessible, larger touch targets, high contrast, warm/organic accents */
+
+/* Background - Deep space with organic touches */
+body {
+    background-color: #1a0b2e;
+    background-image: none;
+}
+
+/* Header Differentiation */
+header {
+    background: rgba(44, 11, 30, 0.9);
+    border-bottom: 3px solid #d946ef;
+    /* Fuchsia/Purple accent */
+}
+
+.logo {
+    color: #e879f9;
+    /* Pink/Purple Logo */
+    font-family: 'Verdana', sans-serif;
+}
+
+nav a.active,
+nav a:hover {
+    color: #f0abfc;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+/* Dashboard Cards - Rounded, bubbly, distinct */
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    /* Very rounded */
+    backdrop-filter: blur(5px);
+}
+
+.stat-card h3 {
+    color: #e879f9;
+    font-weight: bold;
+}
+
+.stat-card .value {
+    color: #fff;
+    color: #fff;
+    /* text-shadow: none; */
+}
+
+/* Forms & Inputs - Larger for "gloved" use */
+.form-control {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #86198f;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.form-control:focus {
+    border-color: #d946ef;
+    box-shadow: 0 0 15px rgba(217, 70, 239, 0.3);
+}
+
+/* Buttons - Pill shaped, gradient */
+.btn {
+    background: #7e22ce;
+    /* Solid Purple */
+    border-radius: 50px;
+    /* Pill shape */
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(192, 38, 211, 0.4);
+}
+
+/* .btn:hover removed for flat effect */
+.btn:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(192, 38, 211, 0.4);
+}
+
+/* Mission Cards */
+.auth-card {
+    border-radius: 25px;
+    border: 2px solid rgba(232, 121, 249, 0.3);
+    background: rgba(20, 10, 30, 0.8);
+}
+
+/* Status Badges */
+.badge {
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+/* --- PAGE SPECIFIC ASTRONAUT STYLES --- */
+
+/* Page: Astrid Dashboard */
+.page-astronaut-dashboard .stat-card-missions {
+    /* Special colors for specific dashboard stats */
+    border-color: #c026d3;
+    background: #2a1025;
+}
+
+.page-astronaut-dashboard .stat-card-logs {
+    border-color: #38bdf8;
+    background: #2a1025;
+}
+
+.page-astronaut-dashboard .stat-card-supplies {
+    border-color: #fbbf24;
+    background: #2a1025;
+}
+
+.page-astronaut-dashboard .timeline-container {
+    background: transparent;
+    /* Remove table container bg for cleaner look */
+    border: none;
+}
+
+/* Page: Astronaut Missions */
+.page-astronaut-missions .cards-layout {
+    display: flex;
+    flex-direction: column;
+    /* Stack missions vertically like a feed */
+    gap: 2rem;
+}
+
+.page-astronaut-missions .mission-card-detail {
+    /* Fancy mission card */
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.page-astronaut-missions .mission-card-detail::before {
+    /* Decorative stripe */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: #e879f9;
+}
+
+.page-astronaut-missions .mission-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.page-astronaut-missions .mission-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e2e8f0;
+}
+
+.page-astronaut-missions .action-btn {
+    width: auto;
+    display: inline-block;
+}

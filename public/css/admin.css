@@ -1,0 +1,163 @@
+/* ADMIN / DIRECTOR THEME - "Command Center" */
+/* Serious, structured, tabular, cool blues and steel grays */
+
+/* Change background to a more structured gradient */
+body {
+    background-image: linear-gradient(to bottom, #0f172a, #1e293b);
+}
+
+/* Header Differentiation */
+header {
+    background: rgba(15, 23, 42, 0.95);
+    /* Darker, more solid */
+    border-bottom: 2px solid #3b82f6;
+    /* Command Blue border */
+}
+
+.logo {
+    color: #3b82f6;
+    /* Blue Logo */
+}
+
+nav a.active,
+nav a:hover {
+    color: #60a5fa;
+    border-bottom: 2px solid #60a5fa;
+}
+
+/* Dashboard Cards - Boxier, more data-focused */
+.stat-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    /* Sharper corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+}
+
+.stat-card .value {
+    color: #f1f5f9;
+    font-family: 'Courier New', monospace;
+    /* Tech vibe */
+}
+
+/* Tables - High density, very structured */
+table {
+    border: 1px solid #334155;
+    background: #0f172a;
+}
+
+th {
+    background: #1e293b;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 12px;
+}
+
+td {
+    border-bottom: 1px solid #334155;
+    padding: 12px;
+    font-size: 0.95rem;
+}
+
+tr:hover {
+    background: #334155;
+}
+
+/* Buttons - Standard, solid colors */
+.btn {
+    background: #3b82f6;
+    /* Solid Blue */
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background: #2563eb;
+}
+
+.btn-secondary {
+    border: 1px solid #94a3b8;
+    color: #cbd5e1;
+}
+
+/* Alerts */
+.alert-success {
+    background: #064e3b;
+    border: 1px solid #059669;
+    color: #a7f3d0;
+}
+
+.alert-error {
+    background: #7f1d1d;
+    border: 1px solid #dc2626;
+    color: #fecaca;
+}
+
+/* --- PAGE SPECIFIC ADMIN STYLES --- */
+
+/* Page: Admin Dashboard */
+.page-admin-dashboard .stat-card {
+    /* Dashboard cards get a specific blue glow to highlight data status */
+    border-top: 3px solid #60a5fa;
+}
+
+.page-admin-dashboard h2 {
+    /* Main dashboard header */
+    border-bottom: 1px solid #334155;
+    padding-bottom: 1rem;
+    color: #93c5fd;
+}
+
+/* Page: Admin Missions */
+.page-admin-missions .layout-missions-split {
+    /* Special layout for missions page */
+    grid-template-columns: 1fr 2fr;
+    /* Form is smaller than list */
+}
+
+.page-admin-missions .auth-card {
+    /* Mission creation form - very utilitarian */
+    border: 1px solid #334155;
+    background: #1e293b;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.page-admin-missions .mission-list-container {
+    grid-column: span 1;
+    /* Override span 2 from generic grid if needed */
+}
+
+/* Specific styling for the Mission List container in this layout */
+.page-admin-missions .mission-list-container h3 {
+    background: #1e293b;
+    padding: 1rem;
+    margin: 0;
+    border: 1px solid #334155;
+    border-bottom: none;
+    font-size: 1rem;
+    color: #f1f5f9;
+}
+
+/* Page: Admin Supplies */
+.page-admin-supplies .btn {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+/* Page: Admin Assignment */
+.page-admin-assignment .auth-card {
+    border: 1px solid #3b82f6;
+    background: #0f172a;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
