@@ -3,8 +3,8 @@
 function dbConnect() {
     $host = 'localhost';
     $dbname = 'beyond_orbit_db';
-    $username = 'root'; // Default XAMPP username
-    $password = '';     // Default XAMPP password
+    $username = 'root'; 
+    $password = '';    
 
     $conn = mysqli_connect($host, $username, $password, $dbname);
 
